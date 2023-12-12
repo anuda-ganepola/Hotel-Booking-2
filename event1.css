@@ -1,0 +1,145 @@
+.functionheading{
+text-align: center;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .functionheading {
+        font-size: 18px;
+        /* Increase font size for a modern look */
+        color: #000000;
+        /* Use a modern color */
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.11);
+        /* Add a semi-transparent background */
+        padding: 10px 20px;
+        /* Add some padding for visual appeal */
+        border-radius: 5px;
+        /* Add rounded corners for a modern touch */
+    }
+}
+
+.nightfunction {
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.nightfunnctionimage11 {
+    width: 50%;
+    height: 30vw;
+}
+
+.nightmessagepara {
+    text-align: center;
+    font-size: larger;
+    padding-top: 7%;
+    padding-bottom: 1.5%;
+}
+.nightfunctionmessage11 {
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 50vw;
+    line-height: 1.9;
+}
+
+.nightfunctionmessage1{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .nightfunction {
+        flex-direction: column;
+    }
+
+    .nightfunnctionimage11 {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .nightmessagepara {
+        padding-top: 3%;
+        padding-bottom: 1.5%;
+    }
+
+    .nightfunctionmessage11 {
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+        padding-right: 1%;
+        padding-left: 1%;
+        width: 100%;
+        line-height: 1.9;
+    }
+
+    .nightfunctionmessage1{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }    
+}
+
+.dayfunction {
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 3%;
+}
+
+.dayfunctionimage11 {
+    width: 50vw;
+    height: 30vw;
+}
+
+.daymessagepara {
+    text-align: center;
+    font-size: larger;
+    margin-top: 7%;
+    margin-bottom: 1.5%;
+}
+.dayfunctionmessage11 {
+
+    margin-top: 3.5%;
+    width: 50vw;
+    line-height: 1.9;
+}
+
+.dayfunctionmessage1{
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+@media screen and (max-width: 768px) {
+    .dayfunction {
+        flex-direction: column;
+    }
+
+    .dayfunctionimage11 {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .daymessagepara {
+        margin-top: 3%;
+        margin-bottom: 1.5%;
+    }
+
+    .dayfunctionmessage11 {
+        margin-top: 3.5%;
+        width: 100%;
+        line-height: 1.9;
+    }
+
+    .dayfunctionmessage1{
+        padding-left: .5%;
+        padding-right: .5%;
+    }    
+}

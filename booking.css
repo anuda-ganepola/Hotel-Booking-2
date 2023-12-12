@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    width: 100vw;
+}
+
+.logo {
+    max-height: 120px;
+    max-width: 80%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li {
+    margin-right: 30px;
+}
+
+.navlist a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navlist a:hover {
+    color: rgb(73, 152, 213);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+@media(max-width:768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlist {
+        display: none;    /* Hide the main navigation list */
+    }
+
+    .mobile-menu-icon {
+        display: block;  /* Display the hamburger icon */
+        cursor: pointer;
+        padding: 0 20px; /* Add some padding to the icon for spacing */
+    }
+
+    .mobile-menu {
+        display: none; /* Initially hide the mobile menu */
+        width: 100%;
+        background-color: #0f1831;
+    }
+
+    .mobile-navlist {
+        list-style: none;
+        padding-bottom: 2%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-navlist li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-navlist a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .mobile-navlist a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    .mobile-menu.open {
+        display: block; /* Show the mobile menu when hamburger icon is clicked */
+    }
+}
+
+.footer {          /*footer start*/
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerTopic {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-media,
+.links,
+.details {
+    flex: 1;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.social-media p,
+.links p,
+.details p {
+    margin: 5px 0;
+}
+
+.social-media a,
+.links a,
+.details a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media a:hover,
+.links a:hover,
+.details a:hover {
+    color: rgb(73, 152, 213);
+}
+
+
+@media (max-width: 768px) {  /* Mobile Footer Style */
+    .footer .content .links {
+        display: none;   /* Hide the links section in mobile view */
+    }
+
+    .footer .content .social-media {
+        text-align: center;   /* Center-align social media icons */
+    }
+
+    .footer .content .details {
+        text-align: center;  /* Center-align address and contact details */
+        margin-top: 20px;
+    }
+
+    .footer .content .details p {
+        margin: 5px 0;
+    }
+
+    .footer .content .details a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .footer .content .details a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    .footer .footerTopic {
+        font-size: 20px;  /* Adjust the footerTopic font size for mobile */
+    }
+}
+
+/* Mobile Footer Style End */
+
+
+/* html body {
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.hotelimage {
+    width: 100vw;
+    margin-top: 1%;
+}
+
+@media screen and (max-width:768px) {
+    .hotelimage {
+        height: 400px;
+        object-fit: cover;
+    }
+
+} */
+
+/*css*/
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output ,#advCostDisplay, #currentCostDisplay{
+   height: 4em;
+   border: black;
+   width: 30em;
+   margin-left: 1em;
+} */
+/* Apply a mobile-first approach */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Style checkboxes for better visibility on smaller screens */
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  /* Apply some spacing for the view and wifi dropdown */
+  form p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style buttons */
+  button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    form {
+      max-width: 100%;
+    }
+  
+    label,
+    input,
+    select {
+      width: 100%;
+      display: block;
+    }
+  
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

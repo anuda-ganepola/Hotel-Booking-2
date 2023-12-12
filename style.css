@@ -1,0 +1,1466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    width: 100vw;
+}
+
+.logo {
+    max-height: 120px;
+    max-width: 80%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li {
+    margin-right: 30px;
+}
+
+.navlist a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navlist a:hover {
+    color: rgb(73, 152, 213);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+@media(max-width:768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlist {
+        display: none;    /* Hide the main navigation list */
+    }
+
+    .mobile-menu-icon {
+        display: block;  /* Display the hamburger icon */
+        cursor: pointer;
+        padding: 0 20px; /* Add some padding to the icon for spacing */
+    }
+
+    .mobile-menu {
+        display: none; /* Initially hide the mobile menu */
+        width: 100%;
+        background-color: #0f1831;
+    }
+
+    .mobile-navlist {
+        list-style: none;
+        padding-bottom: 2%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-navlist li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-navlist a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .mobile-navlist a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    .mobile-menu.open {
+        display: block; /* Show the mobile menu when hamburger icon is clicked */
+    }
+}
+
+.footer {          /*footer start*/
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerTopic {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-media,
+.links,
+.details {
+    flex: 1;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.social-media p,
+.links p,
+.details p {
+    margin: 5px 0;
+}
+
+.social-media a,
+.links a,
+.details a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media a:hover,
+.links a:hover,
+.details a:hover {
+    color: rgb(73, 152, 213);
+}
+
+
+@media (max-width: 768px) {  /* Mobile Footer Style */
+    .footer .content .links {
+        display: none;   /* Hide the links section in mobile view */
+    }
+
+    .footer .content .social-media {
+        text-align: center;   /* Center-align social media icons */
+    }
+
+    .footer .content .details {
+        text-align: center;  /* Center-align address and contact details */
+        margin-top: 20px;
+    }
+
+    .footer .content .details p {
+        margin: 5px 0;
+    }
+
+    .footer .content .details a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .footer .content .details a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    .footer .footerTopic {
+        font-size: 20px;  /* Adjust the footerTopic font size for mobile */
+    }
+}
+
+/* Mobile Footer Style End */
+
+
+html body {
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.hotelimage {
+    width: 100vw;
+    margin-top: 1%;
+}
+
+@media screen and (max-width:768px) {
+    .hotelimage {
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+
+/* to centered the text */
+.hotelmessage {
+    padding-top: 3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.hotel {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.para1 {
+    margin-top: 13%;
+    width: 70vw;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media screen and (max-width:768px) {
+    .hotelmessage {
+        font-size: medium;
+        bottom: 10px;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .para1 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10%;
+        width: 90vw;
+        margin-left: 5%;
+    }
+}
+
+.welcome {
+    display: flex;    /* To put side by side div class */
+    background-color: whitesmoke;
+    margin-top: 1%;
+    width: 100vw;
+    height: 340px;
+    flex-direction: row;
+    /* Revert to horizontal layout for screens wider than 768px */
+
+}
+
+.welcomeimage1,
+.welcomeimage2 {
+    padding-top: 0.5%;
+    padding-right: 0.5%;
+    padding-left: 0.8%;
+    width: 23vw;
+    height: 320px;
+    object-fit: cover;
+}
+
+.welcomemessage {
+    padding-top: 3%;
+    padding-left: 2%;
+    font-size: 17px;
+    width: 50vw;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        color: blanchedalmond;
+    }
+
+    .welcomeimage1 {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .welcomeimage2 {
+        display: none;
+    }
+
+    .welcomemessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        font-size: 11px;
+        padding: 2%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.abouth1 {
+    text-align: center;
+}
+
+.aboutpage {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    width: 100vw;
+    display: flex;
+    height: 350px;
+
+}
+
+.aboutmessage {
+    width: 60%;
+    line-height: 1.6;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+}
+
+.aboutimage1 {
+    padding-top: 0.5%;
+    padding-right: .5%;
+    width: 40vw;
+    height: 320px;
+}
+
+.aboutmessagemobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutpage {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .aboutimage1 {
+        width: 100%;
+    }
+
+    .aboutmessage {
+        display: none;
+    }
+
+    .aboutmessagemobile {
+        display: block;
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+}
+
+.destination {
+    padding: 1%;
+    text-align: center;
+}
+
+.google-map {
+    position: relative;
+}
+
+.google-map iframe {
+    height: 500px;
+    width: 100vw;
+    top: 0;
+}
+
+.adventure {
+    text-align: center;
+    font-style: oblique;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .adventure {
+        font-size: 18px;
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: rgba(0, 0, 0, 0.11);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+}
+
+.yalapark {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex;
+}
+
+.yalamessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+}
+
+.yalaparkimage11 {
+    width: 30vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-left: 1.5%;
+
+}
+
+.yalaparkimage22 {
+    width: 30vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;
+    margin-left: 4%;
+    margin-right: 0.9%;
+}
+
+@media screen and (max-width: 768px) {
+    .yalapark {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .yalaparkimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .yalaparkimage22 {
+        display: none;
+    }
+
+    .yalamessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.sithulpawwa {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex;
+}
+
+.sithulpawwamessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 33vw;
+}
+
+.sithulpawwaimage11 {
+    width: 32vw;
+    height: 350px;
+    padding-left: 2.5;
+    margin-top: 2.3%;
+    margin-left: .5%;
+
+}
+
+.sithulpawwaimage22 {
+    width: 32vw;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .sithulpawwa {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .sithulpawwaimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sithulpawwaimage22 {
+        display: none;
+    }
+
+    .sithulpawwamessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.naturewalk {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex
+}
+
+.naturewalkmessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+}
+
+.naturewalkimage11 {
+    width: 450px;
+    height: 350px;
+    margin-top: 2.2%;
+    margin-left: 2%;
+
+}
+
+.naturewalkimage22 {
+    width: 450px;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .naturewalk {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .naturewalkimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .naturewalkimage22 {
+        display: none;
+    }
+
+    .naturewalkmessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.boatride {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex
+}
+
+.boatridemessage {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 32vw;
+}
+
+.boatrideimage11 {
+    width: 32vw;
+    height: 350px;
+    margin-top: 2.2%;
+    margin-left: 2%;
+
+}
+
+.boatrideimage22 {
+    width: 32vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;
+    margin-left: 4%;
+    margin-right: 0.9%;
+}
+
+@media screen and (max-width: 768px) {
+    .boatride {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .boatrideimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .boatrideimage22 {
+        display: none;
+    }
+
+    .boatridemessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.restaurenttopic {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100vw;
+    text-align: center;
+}
+
+.restaurent {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    width: 100vw;
+}
+
+.restaurentmessage {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0.5%;
+    line-height: 1.8;
+    width: 100vw;
+}
+
+.restaurentimages {
+    background-color: whitesmoke;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    width: 100vw;
+    display: flex;
+}
+
+.restaurent11 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+.restaurent22 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+.restaurent33 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .restaurentmessage {
+        padding-left: 6%;
+        padding-right: 6%;
+        text-align: justify;
+    }
+
+    .restaurent11 {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 0%;
+    }
+
+    .restaurent22 {
+        display: none;
+    }
+
+    .restaurent33 {
+        display: none;
+    }
+
+}
+
+.bartopic {
+    padding-top: 1%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.bar {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 370px;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.barmessage {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    line-height: 1.5;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 40vw;
+}
+
+.bar11 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.2%;
+    padding-bottom: 2.2%;
+    padding-right: .5%;
+}
+
+.bar33 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.3%;
+    padding-bottom: 2.3%;
+    padding-left: 4%;
+    padding-right: 0.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .bar {
+        height: auto;
+        display: block;
+    }
+
+    .bar11 {
+        display: block;
+        width: 100vw;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 3%;
+        margin: 0%;
+    }
+
+    .bar33 {
+        display: none;
+    }
+
+    .barmessage {
+        width: 100vw;
+        font-size: smaller;
+        margin-bottom: 2%;
+        margin-top: 5%;
+        display: block;
+        padding-left: 6%;
+        padding-right: 6%;
+        text-align: justify;
+        line-height: 1.9;
+        font-size: medium;
+    }
+}
+
+.poolbartopic {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100vw;
+    text-align: center;
+}
+
+.poolbar {
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100vw;
+}
+
+.poolbarmessage {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1.5%;
+    line-height: 1.8;
+    width: 100vw;
+}
+
+.poolbarimages {
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100vw;
+    display: flex;
+}
+
+.poolbar11 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: .5%;
+}
+
+.poolbar22 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: .5%;
+}
+
+.poolbar33 {
+    padding-top: 2.3%;
+    width: 33vw;
+    height: 300px;
+    padding-right: .5;
+}
+
+@media screen and (max-width: 768px) {
+
+    .poolbar {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .poolbarmessage {
+        padding-left: 6%;
+        padding-right: 6%;
+        text-align: justify;
+    }
+
+    .poolbarimages {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .poolbar11 {
+        display: none;
+    }
+
+    .poolbar22 {
+        width: 100vw;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 0%;
+        object-fit: cover;
+
+    }
+
+    .poolbar33 {
+        display: none;
+    }
+}
+
+.eventstopic {
+    margin-top: 2%;
+    margin-left: 2.3%;
+    text-align: center;
+    margin-bottom: -3%;
+}
+
+.eventandcatering {
+    background-color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100vw;
+    display: flex;
+}
+
+.eventsandcatering1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: 1%;
+}
+
+/* Centered clickhere1 */
+.clickhere1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.eventsandcatering2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: .9%;
+    padding-right: 1%;
+    width: 33.3vw;
+    height: 300px;
+
+}
+
+.eventsandcatering3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+}
+
+/* Centered clickhere3 */
+.clickhere3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .eventandcatering {
+        height: auto;
+        flex-wrap: wrap;
+        padding-top: 10%;
+        margin-top: 20%;
+    }
+
+    .eventstopic {
+        margin-bottom: -30%;
+    }
+
+    .eventsandcatering1 {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 0%;
+    }
+
+    .eventsandcatering2 {
+        display: none;
+    }
+
+    .eventsandcatering3 {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+.branchesheading {
+    margin-top: 3%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .branchesheading {
+        font-size: 18px;
+        /* Increase font size for a modern look */
+        color: #000000;
+        /* Use a modern color */
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.11);
+        /* Add a semi-transparent background */
+        padding: 10px 20px;
+        /* Add some padding for visual appeal */
+        border-radius: 5px;
+        /* Add rounded corners for a modern touch */
+    }
+}
+
+.branchesmainpara {
+    padding-top: 2%;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    width: 100vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.branch1 {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex;
+    margin-bottom: 3.5%;
+}
+
+.branch1image1 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 3%;
+    padding-left: 1%;
+
+}
+
+
+.branch1googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.branch1para {
+    padding-top: 4%;
+    line-height: 1.5;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+    .branch1 {
+        height: auto;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .branch1image1 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch1googlemap {
+        width: 100vw;
+    }
+
+    .branch1googlemap iframe {
+        width: 100vw;
+    }
+
+    .branch1para {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.branch2 {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex;
+
+}
+
+.branch2para {
+    padding-top: 3.5%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+    padding-bottom: 3.5%;
+}
+
+.branch2googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-left: 2.5;
+    margin-top: .7%;
+    margin-left: .5%;
+}
+
+.branch2image2 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.branch2mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .branch2mobile {
+        display: inline-flex;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .branch2 {
+        display: none;
+    }
+
+    .branch2mobileimage1 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch2mobilegooglemap {
+        width: 100%;
+    }
+
+    .branch2mobilegooglemap iframe {
+        width: 100%;
+    }
+
+    .branch2mobilepara {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.branch3 {
+    margin-top: 3.5%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 100vw;
+    display: flex;
+    ;
+}
+
+.branch3image3 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.3%;
+    padding-left: 1.5%;
+}
+
+.branch3googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-top: .7%;
+    margin-bottom: 2.3%;
+    padding-left: .5%;
+    padding-right: 0.9%;
+}
+
+.branch3para {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 1.5%;
+    padding-right: .5%;
+    width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+    .branch3 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .branch3image3 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch3googlemap {
+        width: 100%;
+    }
+
+    .branch3googlemap iframe {
+        width: 100%;
+    }
+
+    .branch3para {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
+.booknow {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.eventlink {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+    width: 100vw;
+    text-align: center;
+}
+
+.eventlink:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px;
+    /*size of boxes*/
+    border: 2px solid #80a2f2;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 2px 12px 50px 10px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #312c87;
+    color: white;
+    padding: 12px 30px;
+    /*submit button width and height */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #2926d7;
+}
+
+.bookingbox {
+    border-radius: 5px;
+    background-color: #c1d5f7;
+    padding: 20px;
+    width: 100vw;
+}
+
+.clm1 {
+    float: left;
+    width: 30%; /*sliding the boxes8*/
+    margin-top: 8px; /*set the margin difference between boxes*/ 
+    
+}
+
+.clm2 {
+    float: left;
+    width: 60%;  /*set the width of boxes*/
+    margin-top: 6px;
+}
+
+
+.row:after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    label {
+        padding: 1%;
+        display: inline-block;
+    }
+
+    .bookingbox {
+        width: 100%;
+        padding: 10%;
+    }
+
+    .clm1 {
+        float: inherit;
+        width: 100%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .clm2 {
+        float: inherit;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: auto;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #e0e0e0;
+    /* Light gray border */
+    background-color: #fff;
+    /* White background */
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    /* Add a bottom border to separate rows */
+}
+
+th {
+    background-color: #f7f7f7;
+    /* Light gray background for header */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Alternate row background color */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style list items in the table */
+td ul li {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    /* Dark text color */
+}
+
+/* Add spacing between the rating and facilities/activities text */
+td:nth-child(4) ul li {
+    margin-top: 10px;
+}
+
+/* Style the rating */
+td:nth-child(4) {
+    font-weight: bold;
+    color: #009688;
+    /* Green color for ratings */
+}
+
+/* Add responsiveness for mobile devices */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 16px;
+        /* Increase font size for mobile devices */
+    }
+
+    th,
+    td {
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+    }
+}

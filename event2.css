@@ -1,0 +1,133 @@
+.function2heading{
+text-align: center;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .function2heading {
+        font-size: 18px;
+        /* Increase font size for a modern look */
+        color: #000000;
+        /* Use a modern color */
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.11);
+        /* Add a semi-transparent background */
+        padding: 10px 20px;
+        /* Add some padding for visual appeal */
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    text-align: center;
+}
+
+.meeting {
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.meetingimage11 {
+    width: 46.7vw;
+    height: 30vw;
+}
+
+.meetingmessagepara {
+    text-align: center;
+    font-size: larger;
+    margin-top: 7%;
+    margin-bottom: 1.5%;
+}
+.meetingmessage11 {
+    margin-top: 3.5%;
+    width: 50vw;
+    line-height: 1.9;
+}
+
+.meetingmessage1{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .meeting {
+        flex-direction: column;
+    }
+    .meetingimage11 {
+        width: 100vw;
+        height: 50vw;
+    }
+    .meetingmessage11 {
+        width: 100vw;
+    }
+    .meetingmessagepara {
+        margin-top: 0%;
+    }
+    .meetingimage11 {
+        margin-top: 0%;
+    }
+    .meetingmessage1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.wedding {
+    margin-top: 3%;
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.weddingimage11 {
+    width: 50vw;
+    height: 30vw;
+}
+
+.weddingpara {
+    text-align: center;
+    font-size: larger;
+    margin-top: 7%;
+    margin-bottom: 1.5%;
+}
+.weddingmessage11 {
+    margin-top: 3.5%;
+    width: 50vw;
+    line-height: 1.9;
+}
+
+.weddingmessage1{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .wedding {
+        flex-direction: column;
+    }
+    .weddingimage11 {
+        width: 100vw;
+        height: 50vw;
+    }
+    .weddingmessage11 {
+        width: 100vw;
+    }
+    .weddingpara {
+        margin-top: 0%;
+    }
+    .weddingimage11 {
+        margin-top: 0%;
+    }
+    .weddingmessage1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
